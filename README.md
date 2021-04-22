@@ -1,6 +1,6 @@
-# Test
+# Lista dei test
 
-Test vari su repository, GitHub e altro. @alebaccioli
+Test vari su repository, GitHub e altro.
 
 - [1. GitHub Pages title](#1-github-pages-title)
   - [1.1. Legenda](#11-legenda)
@@ -8,6 +8,7 @@ Test vari su repository, GitHub e altro. @alebaccioli
   - [1.3. toc.level](#13-toclevel)
 - [2. GitHub Pages header](#2-github-pages-header)
   - [2.1. Test _config.yml](#21-test-_configyml)
+- [3. Locale](#3-locale)
 
 ## 1. GitHub Pages title
 
@@ -84,3 +85,17 @@ README.md: h1 / Titolo Alternativo, niente `h1` aggiuntivo
 indice.md: h1 / Titolo Alternativo, niente `h1` aggiuntivo
 
 **OK**: ora posso mettere nome repository minuscolo, es. *appunti*, ma titoli pagina maiuscoli, es. *Appunti*, grazie a `_config.yml`. E niente `h1` aggiuntivo.
+
+## 3. Locale
+
+Mettere `locale: it` in `_config.yml` cambia
+
+```html
+<meta property="og:locale" content="it" />
+```
+
+ma non
+
+```html
+<html lang="en-US">
+```
