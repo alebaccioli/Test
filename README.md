@@ -1,22 +1,27 @@
 # Test
 
-Test vari su repository, GitHub e altro.
+Test vari su repository, GitHub e altro. @alebaccioli
 
-@alebaccioli
+- [1. GitHub Pages title](#1-github-pages-title)
+  - [1.1. Legenda](#11-legenda)
+  - [1.2. Test](#12-test)
+  - [1.3. toc.level](#13-toclevel)
+- [2. GitHub Pages header](#2-github-pages-header)
+  - [2.1. Test _config.yml](#21-test-_configyml)
 
-## Titolo della pagina
+## 1. GitHub Pages title
 
 Con l'estensione *Markdown All in One* di *Visual Studio Code* aggiungo un *TOC* auto-generato, ma voglio evitare di mettere `#` nell'indice. Si può mettere `<!-- omit in toc -->` sopra o accanto `#` per ignorarlo, ma questo crea problemi quando viene automaticamente scelto il `title` della risultante pagina *HTML*.
 
 Di seguito vari test per verificare il comportamento di `<!-- omit in toc -->` in varie situazioni.
 
-### Legenda
+### 1.1. Legenda
 
 - h1: `#` della pagina
 - repo: titolo del repo
 - repodesc: descrizione del repo
 
-### Test
+### 1.2. Test
 
 - [1 livello, no README, no omit](md1/no-omit.md): h1 / repo
 - [1 livello, no README, omit](md1/omit.md): repo / repodesc
@@ -29,7 +34,7 @@ Di seguito vari test per verificare il comportamento di `<!-- omit in toc -->` i
 
 README.md: h1 / repo, ma se h1 == repo, allora repo / repodesc
 
-### toc.level
+### 1.3. toc.level
 
 Imposto *Markdown All in One* in modo da ignorare `#` tramite l'opzione `toc.level` mettendo come valore `2..6`. Non mi serve più `<!-- omit in toc -->`.
 
@@ -37,7 +42,7 @@ Imposto *Markdown All in One* in modo da ignorare `#` tramite l'opzione `toc.lev
 
 **OK**: comportamento voluto raggiunto, `title` comprende il valore di `#` ma non è presente nell'indice *TOC* auto-generato.
 
-## Repo title in header
+## 2. GitHub Pages header
 
 Nel tema di default, *Primer*, non compare un `header` ma un `h1` che corrisponde a repo, in aggiunta all'`h1` di `#` (eccetto quando `h1` e `#` hanno lo stesso valore, in tal caso ne compare solo uno).
 
@@ -65,9 +70,9 @@ header {
 }
 ```
 
-Convertire le parentesi *( )* in *{ }*. Necessario perché altrimenti la variabile veniva automaticamente convertita da *GitHub Pages*.
+Convertire le parentesi *( )* in *{ }*. Ho cambiato parentesi qua perché altrimenti la variabile viene automaticamente convertita da *GitHub Pages*, es. `@import "{{ site.theme }}";`.
 
-### Test _config.yml
+### 2.1. Test _config.yml
 
 ```
 name: Titolo Alternativo
