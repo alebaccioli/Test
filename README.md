@@ -58,14 +58,14 @@ Per togliere invece tutto l'`header` per i temi che lo supportano, in `/assets/c
 ---
 ---
 
-@import "{{ site.tema }}";
+@import "{{ site . theme }}";
 
 header {
   display: none;
 }
 ```
 
-Sostituire *tema* con *theme*. Ho messo *tema* perché altrimenti la variabile veniva automaticamente convertita dal sistema.
+Rimuovere gli spazi tra *site* e *theme*. Li ho dovuti mettere perché altrimenti la variabile veniva automaticamente convertita da *GitHub Pages*.
 
 ### Test `_config.yml`
 
