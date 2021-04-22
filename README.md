@@ -71,3 +71,9 @@ header {
 name: Titolo Alternativo
 title: null
 ```
+
+README.md: h1 / Titolo Alternativo, niente `h1` aggiuntivo
+
+indice.md: h1 / Titolo Alternativo, niente `h1` aggiuntivo
+
+**OK**: ora posso mettere nome repository minuscolo, es. *appunti*, ma titoli pagina maiuscoli, es. *Appunti*, grazie a `_config.yml`. E niente `h1` aggiuntivo.
