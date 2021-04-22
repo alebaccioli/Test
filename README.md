@@ -1,7 +1,5 @@
 # Test
 
-Repository per testare alcune funzionalità di Git e GitHub.
-
-## Indice
-
 @alebaccioli
+
+Repository per testare alcune funzionalità di Git e GitHub.
