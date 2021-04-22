@@ -88,14 +88,14 @@ indice.md: h1 / Titolo Alternativo, niente `h1` aggiuntivo
 
 ## 3. Locale
 
+Mettere `lang: it` in `_config.yml` cambia
+
+```html
+<html lang="it">
+```
+
 Mettere `locale: it` in `_config.yml` cambia
 
 ```html
 <meta property="og:locale" content="it" />
-```
-
-ma non
-
-```html
-<html lang="en-US">
 ```
