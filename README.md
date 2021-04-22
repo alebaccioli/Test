@@ -58,12 +58,14 @@ Per togliere invece tutto l'`header` per i temi che lo supportano, in `/assets/c
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "{{ site.tema }}";
 
 header {
   display: none;
 }
 ```
+
+Sostituire *tema* con *theme*. Ho messo *tema* perché altrimenti la variabile veniva automaticamente convertita dal sistema.
 
 ### Test `_config.yml`
 
