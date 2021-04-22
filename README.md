@@ -24,3 +24,7 @@ Test:
 - [2 livelli, README, omit](inner/md2/omit.md): repo / repodesc
 
 README.md: h1 / repo
+
+Se h1 == repo, allora repo / repodesc
+
+[no-omit, toc.level 2..6](indice.md)
